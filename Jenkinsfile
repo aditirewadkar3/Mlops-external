@@ -6,25 +6,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                dir('C:/B.tech Final/MLops external POE') {
-                    bat 'python -m pip install -r requirements.txt'
-                }
+                bat '"C:/Users/Aditi/AppData/Local/Programs/Python/Python311/python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Run Addition') {
             steps {
-                dir('C:/B.tech Final/MLops external POE') {
-                    bat 'python -c "print(12 + 20)"'
-                }
+                bat '"C:/Users/Aditi/AppData/Local/Programs/Python/Python311/python.exe" -c "print(12 + 20)"'
             }
         }
 
         stage('Run Pytest') {
             steps {
-                dir('C:/B.tech Final/MLops external POE') {
-                    bat 'python -m pytest -v'
-                }
+                bat '"C:/Users/Aditi/AppData/Local/Programs/Python/Python311/python.exe" -m pytest -v'
             }
         }
     }
