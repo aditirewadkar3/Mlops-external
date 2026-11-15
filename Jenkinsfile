@@ -5,7 +5,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                dir('C:\\Users\\YourName\\AdditionProject') {
+                dir('C:\B.tech Final\MLops external POE') {
                     bat 'python -m pip install -r requirements.txt'
                 }
             }
@@ -13,7 +13,7 @@ pipeline {
 
         stage('Run Addition') {
             steps {
-                dir('C:\\Users\\YourName\\AdditionProject') {
+                dir('C:\B.tech Final\MLops external POE') {
                     bat 'python -c "print(12 + 20)"'
                 }
             }
@@ -21,7 +21,7 @@ pipeline {
 
         stage('Run Pytest') {
             steps {
-                dir('C:\\Users\\YourName\\AdditionProject') {
+                dir('C:\B.tech Final\MLops external POE') {
                     bat 'python -m pytest -v'
                 }
             }
